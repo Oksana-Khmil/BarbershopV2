@@ -1,0 +1,38 @@
+.form {
+  padding: 84px 0 84px 0;
+  @media (min-width: 768px) {
+    padding: 100px 0 100px 0;
+  }
+  @media (min-width: 1200px) {
+    padding: 130px 40px 130px 55px;
+  }
+  &_name {
+    border: none;
+    border-bottom: 1px solid $lite-text-color;
+    color: $lite-text-color;
+    background-color: transparent;
+    max-width: 220px;
+    width: 100%;
+    height: 24px;
+    margin: 44px 30px 44px 0;
+  }
+  &_phone {
+    border: none;
+    color: $lite-text-color;
+    border-bottom: 1px solid $lite-text-color;
+    background-color: transparent;
+    max-width: 220px;
+    width: 100%;
+    height: 24px;
+  }
+  &_massage {
+    border: none;
+    color: $lite-text-color;
+    border-bottom: 1px solid $lite-text-color;
+    background-color: transparent;
+    max-width: 560px;
+    width: 100%;
+    height: 76px;
+    margin-bottom: 44px;
+  }
+}

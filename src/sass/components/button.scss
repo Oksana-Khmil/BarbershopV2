@@ -1,0 +1,70 @@
+// primary Btn-link
+.link {
+  color: $lite-text-color;
+  background-color: transparent;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  border-radius: 25px;
+  padding: 12px 20px;
+  min-width: 170px;
+  max-width: 170px;
+  border: 2px solid $acent-text-color;
+
+  transition: color 250ms $primary-animation, border-color 250ms $primary-animation,
+    background-color 250ms $primary-animation;
+  &:hover,
+  &:focus {
+    color: $lite-text-color;
+    background-color: $acent-text-color;
+    border-color: $acent-text-color;
+  }
+}
+.link-centred {
+  text-align: center;
+}
+.link-dark {
+  color: $secondary-text-color;
+  &:hover,
+  &:focus {
+    color: $lite-text-color;
+
+    border-color: $acent-text-color;
+  }
+}
+// ==================================================================
+// mobile Btn
+.button_mobile {
+  background-color: transparent;
+  border: none;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.button_mobile-close {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  align-self: flex-end;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.button_mobile-menu {
+  fill: white;
+}
+.button_mobile-cross {
+  display: none;
+}
+.mob-menu.is-open .button_mobile-cross {
+  display: block;
+
+  fill: $secondary-text-color;
+}

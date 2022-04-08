@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <include src="./partials/navbar.html"></include>
+    </header>
+    <!-- main -->
+    <main>
+      <section>
+        <div class="container_hero">
+          <include src="./partials/aside.html"></include>
+          <include src="./partials/slider.html"></include>
+        </div>
+      </section>
+      <include src="./partials/adout-us.html"></include>
+      <include src="./partials/prise-list.html"></include>
+      <include src="./partials/why-we.html"></include>
+      <include src="./partials/specialist.html"></include>
+      <include src="./partials/galery.html"></include>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <include src="./partials/form-address.html"></include>
+      <include src="./partials/footer-line.html"></include>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+//zero stiles setup
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+// ==================================================================
+// picture stiles setup
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+// ==================================================================
+// main body stiles
+body {
+  background-color: $lite-text-color;
+  font-family: $primary-font-family;
+  letter-spacing: $primary-letter-spacing;
+  font-size: $primary-fount-size;
+  color: $primary-text-color;
+}
+// ==================================================================
+// main section stiles
+.section {
+  padding: 84px 0 84px 0;
+
+  @media (min-width: 768px) {
+    padding: 100px 0 100px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 130px 0 130px 0;
+  }
+  &_main_title {
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: $lite-text-color;
+    font-size: 48px;
+
+    @media (min-width: 1200px) {
+      font-size: 72px;
+    }
+  }
+  &_before_title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $slider-before-color;
+    margin-bottom: 20px;
+  }
+  &_before_title.white-text {
+    color: $lite-text-color;
+  }
+  &_before_title.dark-text {
+    color: $secondary-text-color;
+  }
+  &_before_title::before {
+    content: '';
+    margin-right: 20px;
+    width: 60px;
+    border-bottom: solid 1px $slider-before-color;
+  }
+  &_before_title.dark-text::before {
+    content: '';
+    border-bottom: solid 1px $secondary-text-color;
+  }
+  &_before_title.white-text::before {
+    content: '';
+    border-bottom: solid 1px $lite-text-color;
+  }
+  &_title {
+    font-family: $secondary-font-family;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: $secondary-text-color;
+    font-size: 28px;
+
+    @media (min-width: 1200px) {
+      font-size: 42px;
+    }
+  }
+  &_title.lite {
+    color: $lite-text-color;
+  }
+  &_subtitle.subtitle-hero {
+    color: $darkest-text-color;
+  }
+  &_subtitle {
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.2;
+
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+  &_text {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  &_bg-img {
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
+      url(..//images/bg/img@1x.png);
+    background-size: cover;
+    background-position: center;
+  }
+  &_bg-color {
+    background: $lite-bg-color;
+  }
+}
+
+// ==================================================================
+// main container stiles
+.container {
+  margin: 0 auto;
+  padding: 0 31px;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+    padding: 0 39px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 55px;
+  }
+
+  &_row {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+    @media (min-width: 1200px) {
+      display: flex;
+    }
+  }
+  &_row-why {
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 1200px) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+.container_hero {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  min-width: 0;
+
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.container-footer {
+  padding: 44px 39px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 1200px) {
+    padding: 56px 55px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.container-form {
+  background-color: #191c26;
+  @media (max-width: 767px) {
+  }
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+// ==================================================================
+//class visible hidden
+.is-hidden {
+  @extend %invisible;
+}

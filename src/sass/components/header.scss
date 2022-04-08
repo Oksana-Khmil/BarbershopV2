@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  &.active {
+    background-color: $slider-before-color;
+  }
+  &.active .nav-bar {
+    padding: 10px 31px 5px 31px;
+    @media (min-width: 768px) {
+      padding: 10px 39px 5px 39px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 10px 55px 5px 55px;
+    }
+  }
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 31px 5px 31px;
+  @media (min-width: 768px) {
+    width: 768px;
+    padding: 40px 39px 5px 39px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    padding: 40px 55px 5px 55px;
+  }
+  &_svg {
+    fill: $lite-text-color;
+
+    @media (min-width: 768px) {
+      fill: $secondary-text-color;
+    }
+
+    @media (min-width: 1200px) {
+    }
+  }
+}
